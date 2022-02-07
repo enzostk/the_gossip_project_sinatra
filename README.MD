@@ -21,7 +21,7 @@ In broad outline, here are the main features of our web application:</p>
 ```
 $ git clone git@github.com:enzostk/the_gossip_project_sinatra.git
 $ bundle install
-$ console.log('shotgun -p 4567
+$ shotgun -p 4567
 ```
 # Contacts
 <p>Bonnet Enzo - @tehShowtek - enzostk@gmail.com</p>
