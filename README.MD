@@ -1,4 +1,4 @@
-# Week 5, day1, Franck Sinatra (OOP)
+# Week 5, day1, Franck Sinatra 
 <p>Today we are going to work with Sinatra, a Ruby framework designed to code web applications.</p>
 <p>It's a lower-level framework than Ruby on Rails and it's perfect at the beginning to understand the inner workings of a web application.
 Sinatra simply comes in the form of a gem (just like Rails).</p>
