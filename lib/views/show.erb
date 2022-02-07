@@ -5,12 +5,14 @@
     <body>
     <h1>PAGE POTIN !</h1>
     <% gossips.each do |gossip| %>
-      <p><h2> Voici le potin n° <%= id%></h2>
-      <b><h3> Son auteur :</h3></b><%= gossip.author %> <br/>
-      <b><h3> Le contenu du potin :</h3></b> <%= gossip.content %> <br/><br/>
-      <input type='submit' value="Tu peux l'éditer ici"/>
+      <p>
+        <h2> Voici le potin n° <%= id%></h2>
+        <b><h3> Son auteur :</h3></b><%= gossip.author %> <br/>
+        <b><h3> Le contenu du potin :</h3></b> <%= gossip.content %> <br/></br>
+        ------------------------------------------------------------------</br>
+        Clique <a href="<%= id%>/edit">ici</a> pour modifier ce potin.
       </p>
     <% end %>
-    <p>Clique <a href="/">ici</a> pour revenir à la page des potins</p>
+    <p>Clique <a href="/">ici</a> pour revenir à la page des potins.</p>
     </body>
 </html>
