@@ -1,15 +1,18 @@
 <html>
   <head>
-    <title>Modifier un potin</title>
+    <title>Modifier le potin <%= id%></title>
   </head>
   <body>
-    <h1>There is good and bad potins.</h1>
-    <p>Es-tu sur de vouloir modifier ce potin? Si oui, remplis le formulaire ci-dessous:</p>
-    <form action='/gossips/new/' method='POST'>
-      Met ton blaze : <input type='text' name='gossip_author'/><br/>
-      Met ton texte : <input type='text' name='gossip_content'/><br/>
-      <input type='submit' value="Modifier le potin"/>
-      <p>Clique <a href="/">ici</a> si veux te retracter.</p>
-    </form>
+  <h1>Edit the motherf*cking gossip.</h1>
+  <br/> 
+  <p>Mise à jour du potin <%= id%> via le formulaire ci-dessous</p> 
+  <form action='/gossips/edit/' method='POST'> 
+      <% gossips.each do |gossip| %>
+          Qui t'a raconté ce potin :  <input type='text' name='gossip_author'/><br/> 
+          Ce qu'il t'a raconté : <input type='text' name='gossip_content'/><br/> 
+       <% end %>
+      <input type='hidden' name='id' value='<%= id %>'/>
+      <input type='submit'/> 
+  </form> 
   </body>
 </html>
